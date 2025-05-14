@@ -1,0 +1,646 @@
+@charset "UTF-8";
+/* GLOBAL */
+p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* FONTS */
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/OpenSans.ttf);
+}
+@font-face {
+  font-family: "Marydale";
+  src: url(../fonts/Marydale.ttf);
+}
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+}
+
+.marydale {
+  font-family: "Marydale";
+}
+
+/* VARIABLES */
+/* @link https://utopia.fyi/type/calculator?c=380,8,1.2,1922,40,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+:root {
+  --step--2: clamp(0.3472rem, 0.0385rem + 1.2999cqi, 1.6rem);
+  --step--1: clamp(0.4167rem, 0.0265rem + 1.6429cqi, 2rem);
+  --step-0: clamp(0.5rem, 0.0071rem + 2.0752cqi, 2.5rem);
+  --step-1: clamp(0.6rem, -0.0222rem + 2.62cqi, 3.125rem);
+  --step-2: clamp(0.72rem, -0.0652rem + 3.3061cqi, 3.9063rem);
+  --step-3: clamp(0.864rem, -0.1264rem + 4.17cqi, 4.8828rem);
+  --step-4: clamp(1.0368rem, -0.2118rem + 5.2573cqi, 6.1035rem);
+  --step-5: clamp(1.2442rem, -0.3294rem + 6.6254cqi, 7.6294rem);
+}
+
+/* POSTER */
+#poster-container {
+  position: relative;
+  background-color: white;
+  container-type: inline-size;
+}
+
+.poster-content {
+  width: 100%;
+  height: 100%;
+}
+
+/* BACKGROUND */
+.background-white-top {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.background-lightblue {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.background-blue {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 31%;
+  left: 0;
+  z-index: 2;
+}
+
+.background-white-middle {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 35%;
+  left: 0;
+  z-index: 0;
+}
+
+.background-pink {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  bottom: 4%;
+  z-index: 1;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+/* ILLUSTRATIONS */
+.arrow {
+  width: 11%;
+  height: auto;
+  position: absolute;
+  top: 25%;
+  left: 26%;
+  z-index: 3;
+}
+
+.bubble {
+  width: 13%;
+  height: auto;
+  position: absolute;
+  top: 68%;
+  left: 68%;
+  z-index: 3;
+}
+
+.caret {
+  width: 3.5%;
+  height: auto;
+  position: absolute;
+  top: 57%;
+  left: 21.5%;
+  z-index: 3;
+}
+
+.cloud {
+  width: 20%;
+  height: auto;
+  position: absolute;
+  top: 83.5%;
+  left: 3%;
+  z-index: 3;
+}
+
+.coin {
+  width: 10%;
+  height: auto;
+  position: absolute;
+  top: 88%;
+  left: 50%;
+  z-index: 3;
+  animation: animationCoin 5s linear infinite;
+}
+
+.earth {
+  width: 23%;
+  height: auto;
+  position: absolute;
+  top: 71%;
+  left: 44%;
+  z-index: 3;
+}
+
+.flame {
+  width: 8%;
+  height: auto;
+  position: absolute;
+  top: 53%;
+  left: 67.5%;
+  z-index: 3;
+}
+
+.left-eye {
+  width: 4%;
+  height: auto;
+  position: absolute;
+  top: 77.2%;
+  left: 57%;
+  z-index: 3;
+}
+
+.right-eye {
+  width: 4%;
+  height: auto;
+  position: absolute;
+  top: 77%;
+  left: 49.4%;
+  z-index: 3;
+}
+
+.lightning-up {
+  width: 4%;
+  height: auto;
+  position: absolute;
+  top: 40%;
+  left: 74%;
+  z-index: 3;
+}
+
+.lightning-left {
+  width: 11%;
+  height: auto;
+  position: absolute;
+  top: 49%;
+  left: 45%;
+  z-index: 3;
+}
+
+.line {
+  width: 0.3%;
+  height: auto;
+  position: absolute;
+  top: 96.2%;
+  left: 34.5%;
+  z-index: 3;
+}
+
+.line-2 {
+  width: 0.3%;
+  height: auto;
+  position: absolute;
+  top: 96.2%;
+  left: 75%;
+  z-index: 3;
+}
+
+.ntnu-logo {
+  width: 30%;
+  height: auto;
+  position: absolute;
+  top: 96.6%;
+  left: 3%;
+  z-index: 3;
+}
+
+.parasite-brows {
+  width: 9%;
+  height: auto;
+  position: absolute;
+  top: 54.5%;
+  left: 46%;
+  z-index: 3;
+  animation: animationParasite 8s ease-in-out infinite;
+}
+
+.parasite-brows-2 {
+  width: 7%;
+  height: auto;
+  position: absolute;
+  top: 48.5%;
+  left: 33.5%;
+  z-index: 3;
+  animation: animationParasite 8.8s ease-in-out infinite;
+}
+
+.parasite {
+  width: 4.5%;
+  height: auto;
+  position: absolute;
+  top: 52.5%;
+  left: 29%;
+  z-index: 3;
+  animation: animationParasite 8.2s ease-in-out infinite;
+}
+
+.parasite-2 {
+  width: 4.5%;
+  height: auto;
+  position: absolute;
+  top: 53.5%;
+  left: 39%;
+  z-index: 3;
+  animation: animationParasite 8.4s ease-in-out infinite;
+}
+
+.parasite-3 {
+  width: 5%;
+  height: auto;
+  position: absolute;
+  top: 60%;
+  left: 41%;
+  z-index: 3;
+  animation: animationParasite 8.6s ease-in-out infinite;
+}
+
+.qr {
+  width: 12%;
+  height: auto;
+  position: absolute;
+  top: 86%;
+  left: 87%;
+  z-index: 3;
+}
+
+.sun {
+  width: 15%;
+  height: auto;
+  position: absolute;
+  top: 72%;
+  left: 21.5%;
+  z-index: 3;
+  animation: animationSun 20s linear infinite;
+  transform-origin: center center;
+}
+
+.table {
+  width: 34%;
+  height: auto;
+  position: absolute;
+  top: 47%;
+  left: 58%;
+  z-index: 3;
+}
+
+.web {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 17%;
+  left: 0;
+  z-index: 3;
+}
+
+.wifi {
+  width: 5%;
+  height: auto;
+  position: absolute;
+  top: 19.3%;
+  left: 36.9%;
+  z-index: 3;
+}
+
+.wifi-2 {
+  width: 5%;
+  height: auto;
+  position: absolute;
+  top: 15.4%;
+  left: 61.9%;
+  z-index: 3;
+}
+
+.wifi-3 {
+  width: 5%;
+  height: auto;
+  position: absolute;
+  top: 18.6%;
+  left: 81.2%;
+  z-index: 3;
+}
+
+/* TEXT */
+.text-webben {
+  width: 12ch;
+  height: auto;
+  position: absolute;
+  z-index: 4;
+  font-weight: 800;
+  font-size: var(--step-4);
+  line-height: 1.2;
+  top: 4%;
+  left: 5%;
+  color: #005ba7;
+}
+
+.text-oppdag {
+  position: absolute;
+  top: 13.5%;
+  left: 5%;
+  z-index: 4;
+  font-size: var(--step-0);
+}
+
+.text-internett {
+  width: 20ch;
+  position: absolute;
+  top: 9.5%;
+  left: 73%;
+  z-index: 4;
+  font-size: var(--step-0);
+}
+
+.text-store {
+  width: 23ch;
+  position: absolute;
+  top: 28%;
+  left: 5%;
+  z-index: 4;
+  font-size: var(--step--1);
+  line-height: 1.2;
+}
+
+.text-elektrisitet {
+  position: absolute;
+  top: 42%;
+  left: 25%;
+  z-index: 4;
+  color: white;
+  font-size: var(--step-0);
+}
+
+.text-forskjellige {
+  position: absolute;
+  top: 44%;
+  left: 38%;
+  z-index: 4;
+  color: white;
+  font-size: var(--step-0);
+}
+
+.text-ikke {
+  position: absolute;
+  top: 47%;
+  left: 58%;
+  z-index: 4;
+  color: white;
+  font-size: var(--step-0);
+  font-weight: bold;
+}
+
+.text-fornybar {
+  position: absolute;
+  top: 47%;
+  left: 79%;
+  z-index: 4;
+  color: white;
+  font-size: var(--step-0);
+  font-weight: bold;
+}
+
+.list-ikke {
+  position: absolute;
+  top: 50%;
+  left: 58%;
+  z-index: 4;
+  color: white;
+  font-size: var(--step--1);
+  list-style-position: inside;
+}
+
+.list-fornybar {
+  position: absolute;
+  top: 50%;
+  left: 79%;
+  z-index: 4;
+  color: white;
+  font-size: var(--step--1);
+  list-style-position: inside;
+}
+
+.text-elektrisiteten {
+  width: 20ch;
+  position: absolute;
+  top: 46%;
+  left: 5%;
+  z-index: 4;
+  color: black;
+  font-size: var(--step-0);
+}
+
+.text-drivhusgasser {
+  width: 14ch;
+  position: absolute;
+  top: 57%;
+  left: 5%;
+  z-index: 4;
+  color: black;
+  font-size: var(--step-0);
+  font-weight: bold;
+}
+
+.list-drivhusgasser {
+  position: absolute;
+  top: 57.9%;
+  left: 25.4%;
+  z-index: 4;
+  color: black;
+  font-size: var(--step--1);
+  list-style-position: inside;
+}
+
+.text-klimaendringer {
+  width: 14ch;
+  position: absolute;
+  top: 68%;
+  left: 5%;
+  z-index: 4;
+  color: black;
+  font-size: var(--step-0);
+}
+
+.text-vannstanden {
+  width: 14ch;
+  position: absolute;
+  top: 75%;
+  left: 5%;
+  z-index: 4;
+  color: black;
+  font-size: var(--step--1);
+  line-height: 1.35;
+}
+
+.text-helsprøtt {
+  width: 14ch;
+  position: absolute;
+  top: 84%;
+  left: 26%;
+  z-index: 4;
+  color: black;
+  font-size: var(--step--1);
+  line-height: 1.35;
+}
+
+.text-varmere {
+  width: 12ch;
+  position: absolute;
+  top: 66.2%;
+  left: 37.5%;
+  z-index: 4;
+  color: black;
+  font-size: var(--step--1);
+  line-height: 1.35;
+}
+
+.text-naturproblemer {
+  width: 11.8ch;
+  position: absolute;
+  top: 62%;
+  left: 58%;
+  z-index: 4;
+  color: black;
+  font-size: var(--step--1);
+  line-height: 1.35;
+}
+
+.text-mindre {
+  width: 14ch;
+  position: absolute;
+  top: 66%;
+  left: 83%;
+  z-index: 4;
+  color: black;
+  font-size: var(--step--1);
+  line-height: 1.35;
+}
+
+.text-mennesker {
+  width: 16ch;
+  position: absolute;
+  top: 77%;
+  left: 80%;
+  z-index: 4;
+  color: black;
+  font-size: var(--step--1);
+  line-height: 1.35;
+}
+
+.text-pengeproblemer {
+  width: 14ch;
+  position: absolute;
+  top: 86%;
+  left: 68%;
+  z-index: 4;
+  color: black;
+  font-size: var(--step--1);
+  line-height: 1.35;
+}
+
+.text-last {
+  text-align: end;
+  position: absolute;
+  top: 96.3%;
+  left: 37%;
+  z-index: 4;
+  color: white;
+  font-size: var(--step--2);
+  line-height: 1.35;
+}
+
+.text-kontakt {
+  text-align: end;
+  position: absolute;
+  top: 97%;
+  left: 80%;
+  z-index: 4;
+  color: white;
+  font-size: var(--step--2);
+  line-height: 1.35;
+}
+
+/* UTILITY CLASSES */
+.block {
+  display: block;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.step-1 {
+  font-size: var(--step-1);
+}
+
+.green {
+  color: #0FA15C;
+}
+
+/* ANIMATIONS */
+@keyframes animationSun {
+  0% {
+    transform: rotate(10deg);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+@keyframes animationCoin {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes animationParasite {
+  0% {
+    transform: scale(0.75);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.75);
+    opacity: 0.5;
+  }
+}/*# sourceMappingURL=style.css.map */

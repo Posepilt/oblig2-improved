@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/styles/poster.css">
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <script src="./assets/scripts/poster.js" defer></script>
+  <title>Poster Viewer</title>
+</head>
+
+<body>
+  <main>
+    <button id="toggle-button">Toggle Fullscreen</button>
+    <div id="width-display" class="width-display"></div>
+    <div id="poster-container" class="poster">
+      <div class="poster-content">
+        <!-- BACKGROUND AND FOOTER-->
+        <!-- White top -->
+        <svg viewBox="0 0 1683.78 636.41" class="background-white-top">
+          <use href="./assets/img/sprite.svg#background-white-top"/>
+        </svg>
+        <!-- Lightblue -->
+        <svg viewBox="0 0 1683.78 1560.63" class="background-lightblue">
+          <use href="./assets/img/sprite.svg#background-lightblue"/>
+        </svg>
+        <!-- Blue -->
+        <svg viewBox="0 0 1683.78 774.83" class="background-blue">
+          <use href="./assets/img/sprite.svg#background-blue"/>
+        </svg>
+        <!-- White middle -->
+        <svg viewBox="0 0 1683.78 927.43" class="background-white-middle">
+          <use href="./assets/img/sprite.svg#background-white-middle"/>
+        </svg>
+        <!-- Pink -->
+        <svg viewBox="0 0 1683.78 871.42" class="background-pink">
+          <use href="./assets/img/sprite.svg#background-pink"/>
+        </svg>
+        <!-- Footer -->
+        <svg viewBox="0 0 1683.78 114.26" class="footer">
+          <use href="./assets/img/sprite.svg#footer"/>
+        </svg>
+        
+        <!-- ILLUSTRATIONS -->
+        <!-- Arrow -->
+        <svg viewBox="0 0 239.84 110.74" class="arrow">
+          <use href="./assets/img/sprite.svg#arrow"/>
+        </svg>
+        <!-- Bubble -->
+        <svg viewBox="0 0 207.06 170.75" class="bubble">
+          <use href="./assets/img/sprite.svg#bubble"/>
+        </svg>
+        <!-- Caret -->
+        <svg viewBox="0 0 52.36 155.96" class="caret">
+          <use href="./assets/img/sprite.svg#caret"/>
+        </svg>
+        <!-- Cloud -->
+         <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" class="cloud">
+          <!-- Infinity path -->
+          <path id="infinityPath" 
+          d="M150,100 C130,80 130,120 150,100 C170,80 170,120 150,100"
+          fill="none" stroke="lightgray" stroke-dasharray="5,5"/>
+          <!-- Illustration -->
+          <g id="cloud" transform="translate(-60, -50)">
+            <g>
+                <g>
+                    <path d="M162.66,49.6c4.5-6.9,3.8-16.8-1.7-23s-15.2-8.2-22.6-4.6c2.7-10-8-19.7-18.4-19.7s-19.6,6.6-27.2,13.6c-2.9-8.3-12.9-11.7-21.7-12.2-5.6-.3-11.5.1-16.1,3.4-4.5,3.3-6.8,10.2-3.4,14.7,0,0-3,.2-4,2.4-9.7,2-20.7-4-29.1,1.3-9.8,6.2-6.6,21-2.2,31.7-10.6,3.6-13,17.1-13.8,28.3-.6,9.3-.9,19.6,4.8,26.9,8.4,10.7,24.6,9.6,38,7.7,2.7-.4,5.6-.7,8.2.1,2.5.8,4.6,2.7,6.8,4.1,14.7,9.5,33.9,1.4,49.4-6.8-.1,9.7,10.3,17.6,20,16.2,9.6-1.4,17.1-10.5,18.2-20.2,1.7,8.4,6.6,16.3,14,20.7s23.4,3.8,30.7-.8c5.5-3.5,12.8-8.3,15.6-14.2,1.2-2.5,2.4-5.2,3.5-7.8,2.1-5.3,1.5-13.4-.1-21.3-3.3-16.1-14.8-29.2-30.2-35-6.8-2.5-13.9-4.8-18.7-5.5h0Z" style="fill: #f3f4f4; stroke-width: 0px;"/>
+                    <path d="M164.66,50.8c4-6.2,4.2-14.2,1.2-20.8-3-6.8-9.7-11-16.9-11.9-4-.5-8.1.2-11.8,1.9l3.4,2.6c2.1-8.5-3.5-16.5-10.9-20.2-3.9-1.9-8.1-2.7-12.5-2.3-4.7.5-9.1,2.1-13.2,4.4-4.7,2.6-8.9,6.1-12.9,9.7l3.9,1c-2.9-8.2-11.3-12.1-19.3-13.4-8.9-1.4-20.5-1-25.8,7.5-2.5,4-3.2,9.6-.3,13.6l2-3.5c-2.4.2-4.8,1.3-5.9,3.5l1.4-1.1c-9.5,1.9-19.4-3.7-28.5.9-3.7,1.9-6.4,5.3-7.7,9.2-1.3,3.9-1.1,8.2-.6,12.2.7,4.7,2.1,9.2,3.9,13.5l1.6-2.8c-10.5,3.7-13.7,15.2-14.9,25.1-.7,5.7-1.1,11.6-.7,17.3.4,6.2,2,12.4,6.2,17.2,7.2,8.6,19.5,9.6,30,8.8,2.8-.2,5.5-.5,8.2-.9,3-.4,6.4-1.1,9.3.2,2.9,1.3,5.1,3.5,7.8,4.9,2.8,1.4,5.6,2.4,8.6,2.8,12.8,2,25.5-3.2,36.6-8.8,1.4-.7,2.8-1.4,4.1-2.1l-3.5-2c0,8.5,6.7,15.7,14.7,17.9,8.5,2.4,17.2-1.5,22.5-8.2,3.1-4,5-8.7,5.6-13.7l-4.5.6c2.3,11.2,10.2,22.2,21.9,24.6,5.5,1.1,11.2,1,16.7.1,2.6-.5,5-1.2,7.4-2.3,2.4-1.1,4.5-2.7,6.7-4.2,2.6-1.8,5.1-3.8,7.4-6,2.3-2.3,4-4.9,5.3-7.9,1.5-3.1,3.1-6.4,3.7-9.8.6-3.4.6-6.8.3-10.2-.6-6.6-2-13-4.7-19.1-2.3-5.2-5.6-10-9.6-14.1s-8.7-7.6-13.9-10.2c-3-1.5-6.1-2.6-9.3-3.7-3.3-1.2-6.7-2.3-10.2-3.1-1.4-.3-2.8-.6-4.2-.9-1.2-.2-2.5.3-2.8,1.6-.3,1.1.4,2.6,1.6,2.8,6.3,1,12.5,3.3,18.5,5.5,4.9,1.8,9.5,4.5,13.5,7.9,8.2,7,13.5,16.4,15.5,27,1.1,5.9,2.1,12.7,0,18.4-1.1,3-2.4,6.2-4.1,8.9-1.4,2.3-3.5,4.2-5.5,6-2.2,1.8-4.6,3.4-6.9,5-2,1.3-3.6,2.2-5.6,2.8-4.7,1.5-9.7,1.9-14.7,1.5-4.6-.4-8.7-1.5-12.4-4.5-4.2-3.5-7.3-8.1-9-13.3-.5-1.4-.8-2.8-1.1-4.1-.2-1.1-1.5-1.8-2.5-1.7-1.2.2-1.9,1.1-2,2.3-.8,6.8-5.2,13.4-11.5,16.4-6.2,3.1-13,1.6-17.8-3-2.6-2.5-4.3-5.9-4.3-9.5,0-1.8-1.9-2.8-3.5-2-10.2,5.4-21.6,10.9-33.4,10.8-2.7,0-5.4-.4-8.1-1.3-2.6-.8-5.1-2.3-7.4-3.9-2.7-1.9-5.4-3.5-8.8-3.7-3-.2-6,.4-8.9.8-5.2.6-10.5,1-15.8.6-4.7-.4-9.4-1.5-13.4-4.2-9.4-6.5-8.9-19.4-8.2-29.6.3-4.8.9-9.4,2.4-14,.7-2.2,1.5-4.1,2.8-6.1,1-1.6,2.5-3.2,4.1-4.2.9-.6,1.8-1,2.7-1.3,1.1-.4,2.1-1.6,1.6-2.8-1.7-4.1-3.1-8.4-3.8-12.8-.6-3.7-.7-7.8.8-11.4-.1.4.2-.4.2-.3.1-.2.2-.4.3-.7.2-.4.5-.8.8-1.2.2-.2.2-.3.6-.7s.8-.8,1.3-1.2c1.4-1.2,3.7-2.1,5.7-2.4,4.9-.8,9.9.5,14.7,1,2.9.3,6,.4,8.8-.2.5-.1.9-.3,1.3-.7,0,0,.7-1,.6-.8,0,0,.6-.5.2-.3.2-.1.5-.3.7-.4.4-.2-.5.1.1,0,.2-.1.5-.1.7-.2.1,0,.3-.1.4-.1-.2-.1-.6.1-.3,0,1.6-.1,3.1-1.9,2-3.5-1.8-2.5-1.6-5.6-.1-8.3,1.8-3.2,5-5,8.6-5.8,3.8-.9,8-.8,11.8-.2,3.2.4,6.7,1.3,9.6,2.9,3.2,1.7,5.9,4.1,7.1,7.4.6,1.6,2.5,2.2,3.9,1,5.9-5.5,12.8-10.7,20.8-12.5,3.6-.8,7.2-.7,10.7.6,3.1,1.1,5.9,3.2,7.9,5.8,2.3,2.9,3.3,6.4,2.4,9.9-.5,2.1,1.6,3.4,3.4,2.6,5.1-2.4,11.3-1.8,16.1,1.1,4.8,2.9,7.7,8.5,7.7,14.3,0,3.2-.9,6.4-2.6,9.1-1.6,2.7,2.4,5,4,2.6h0Z" style="fill: #231f20; stroke-width: 0px;"/>
+                </g>
+                <g>
+                    <path d="M89.86,103.6c-1,0-1.8-.8-1.8-1.8,0-5,4.5-9.1,10-9.1s9.7,3.8,10,8.7c0,1-.7,1.8-1.7,1.9-1,0-1.8-.7-1.9-1.7-.1-2.9-3-5.3-6.4-5.3s-6.4,2.5-6.4,5.5c0,1-.8,1.8-1.8,1.8h0Z" style="fill: #231f20; stroke-width: 0px;"/>
+                    <path d="M55.86,177.8c0,2.5-2,4.4-4.4,4.4s-4.4-2-4.4-4.4,4.4-9.5,4.4-9.5c0,0,4.4,7.1,4.4,9.5Z" style="fill: #dcddde; stroke: #231f20; stroke-miterlimit: 10; stroke-width: 4.6px;"/>
+                    <path d="M154.06,148.4c0,2.5-2,4.4-4.4,4.4s-4.4-2-4.4-4.4,4.4-9.5,4.4-9.5c0,0,4.4,7.1,4.4,9.5Z" style="fill: #dcddde; stroke: #231f20; stroke-miterlimit: 10; stroke-width: 4.6px;"/>
+                    <path d="M53.26,136.1c0,3.5-2.8,6.3-6.3,6.3s-6.3-2.8-6.3-6.3,6.3-13.5,6.3-13.5c0,0,6.3,10,6.3,13.5Z" style="fill: #dcddde; stroke: #231f20; stroke-miterlimit: 10; stroke-width: 4.6px;"/>
+                    <path d="M138.76,130.3c0,3.5-2.8,6.3-6.3,6.3s-6.3-2.8-6.3-6.3,6.3-13.5,6.3-13.5c0,0,6.3,10,6.3,13.5Z" style="fill: #dcddde; stroke: #231f20; stroke-miterlimit: 10; stroke-width: 4.6px;"/>
+                    <path d="M137.16,171.9c0,3.5-2.8,6.3-6.3,6.3s-6.3-2.8-6.3-6.3,6.3-13.5,6.3-13.5c0,0,6.3,10,6.3,13.5Z" style="fill: #dcddde; stroke: #231f20; stroke-miterlimit: 10; stroke-width: 4.6px;"/>
+                    <path d="M72.86,156.5c0,3.5-2.8,6.3-6.3,6.3s-6.3-2.8-6.3-6.3,6.3-13.5,6.3-13.5c0,0,6.3,10,6.3,13.5Z" style="fill: #dcddde; stroke: #231f20; stroke-miterlimit: 10; stroke-width: 4.6px;"/>
+                    <path d="M70.96,111.6c0,2.4-2,4.4-4.4,4.4s-4.4-2-4.4-4.4,4.4-9.5,4.4-9.5c0,0,4.4,7.1,4.4,9.5Z" style="fill: #daedf4; stroke: #231f20; stroke-miterlimit: 10; stroke-width: 4.6px;"/>
+                    <path d="M124.56,100.7c0,2.5-2,4.4-4.4,4.4s-4.4-2-4.4-4.4,4.4-9.5,4.4-9.5c0,0,4.4,7.1,4.4,9.5Z" style="fill: #daedf4; stroke: #231f20; stroke-miterlimit: 10; stroke-width: 4.6px;"/>
+                <g>
+            <g>
+                <path d="M137.16,56.2h0c.3-4.2-4.3-8.6-8.5-6.8-12.1,2.5-19.6,42.3.8,34.4,7-2.2,5.5-9.6,6.2-15.4.3-3,1.9-9.2,1.5-12.2h0Z" style="fill: #231f20; stroke-width: 0px;"/>
+                <path d="M136.26,56.9c.8,8.1-6.9,7.5-7.7.3-1.2-8.4,7.8-8.5,7.7-.3Z" style="fill: #fff; stroke-width: 0px;"/>
+            </g>
+            <g>
+                <path d="M63.06,79.9c-.9-9.9-5.1-31.6,10.4-30.6,10.5,3.7,6.9,20.8,4.9,29.1-2.1,6.2-13.3,9.2-15.3,1.5h0Z" style="fill: #231f20; stroke-width: 0px;"/>
+                <path d="M78.16,57.4c1.3,9.3-14,1.1-8.7-3.8,3.5-3.4,8.2-.7,8.7,3.8Z" style="fill: #fff; stroke-width: 0px;"/>
+                <path d="M70.66,75.9c.9,3.6-3.9,6-5.2,2-1.9-4,4.5-6.7,5.2-2Z" style="fill: #fff; stroke-width: 0px;"/>
+            </g>
+            </g>
+            </g>
+                <path d="M122.76,72.5c3.7.5,1.8,7.8-1.3,7.3-4.3-.8-2.8-7.5,1.3-7.3Z" style="fill: #fff; stroke-width: 0px;"/>
+            </g>
+        </g>
+          <!-- Animate group -->
+          <animateMotion 
+          xlink:href="#cloud"
+          dur="6s"
+          repeatCount="indefinite"
+          rotate="0">
+          <mpath href="#infinityPath"/>
+        </animateMotion>
+         </svg>
+        <!-- <svg viewBox="0 0 215.36 184.5" class="cloud">
+          <use href="./assets/img/sprite.svg#cloud"/>
+        </svg> -->
+        <!-- Coin -->
+        <svg viewBox="0 0 178.26 153.42" class="coin">
+          <use href="./assets/img/sprite.svg#coin"/>
+        </svg>
+        <!-- Earth -->
+        <svg viewBox="0 0 428.32 421.1" class="earth">
+          <use href="./assets/img/sprite.svg#earth"/>
+        </svg>
+        <!-- Left eye -->
+         <svg viewBox="0 0 20 20" class="left-eye">
+          <ellipse cx="10" cy="10" rx="2.75" ry="3.25" fill="white" stroke="#414042" stroke-width="1px">
+            <animateTransform
+              attributeName="transform"
+              attributeType="XML"
+              type="translate"
+              values="-2 0; 2 0; -2 0"
+              dur="3s"
+              repeatCount="indefinite"/>
+          </ellipse>
+         </svg>
+        <!-- Right eye -->
+        <svg viewBox="0 0 20 20" class="right-eye">
+          <ellipse cx="10" cy="10" rx="2.75" ry="3.25" fill="white" stroke="#414042" stroke-width="1px">
+            <animateTransform
+              attributeName="transform"
+              attributeType="XML"
+              type="translate"
+              values="-2 0; 2 0; -2 0"
+              dur="3s"
+              repeatCount="indefinite"/>
+          </ellipse>
+         </svg>
+        <!-- Flame -->
+        <svg viewBox="0 0 153.21 166.84" class="flame">
+          <use href="./assets/img/sprite.svg#flame"/>
+        </svg>
+        <!-- Lightning pointing up -->
+        <svg viewBox="0 0 71.89 156.61" class="lightning-up">
+          <use href="./assets/img/sprite.svg#lightning-up"/>
+        </svg>
+        <!-- Lightning pointing left -->
+        <svg viewBox="0 0 170.5 93.38" class="lightning-left">
+          <use href="./assets/img/sprite.svg#lightning-left"/>
+        </svg>
+        <!-- Line -->
+         <svg class="line" viewBox="0 0 5 68.31">
+          <use href="./assets/img/sprite.svg#line"/>
+         </svg>
+        <!-- Line 2 -->
+         <svg class="line-2" viewBox="0 0 5 68.31">
+          <use href="./assets/img/sprite.svg#line"/>
+         </svg>
+        <!-- NTNU logo -->
+         <svg viewBox="0 0 502.13 44.74" class="ntnu-logo">
+          <use href="./assets/img/sprite.svg#ntnu-logo"/>
+         </svg>
+        <!-- Parasite with brows -->
+        <svg viewBox="0 0 105.61 98.75" class="parasite-brows">
+          <use href="./assets/img/sprite.svg#parasite-brows"/>
+        </svg>
+        <!-- Parasite with brows -->
+        <svg viewBox="0 0 105.61 98.75" class="parasite-brows-2">
+          <use href="./assets/img/sprite.svg#parasite-brows"/>
+        </svg>
+        <!-- Parasite -->
+        <svg viewBox="0 0 164.9 153.88" class="parasite">
+          <use href="./assets/img/sprite.svg#parasite"/>
+        </svg>
+        <!-- Parasite -->
+        <svg viewBox="0 0 164.9 153.88" class="parasite-2">
+          <use href="./assets/img/sprite.svg#parasite"/>
+        </svg>
+        <!-- Parasite -->
+        <svg viewBox="0 0 164.9 153.88" class="parasite-3">
+          <use href="./assets/img/sprite.svg#parasite"/>
+        </svg>
+        <!-- QR -->
+        <svg viewBox="0 0 186.7 185.8" class="qr">
+          <use href="./assets/img/sprite.svg#qr"/>
+        </svg>
+        <!-- Sun -->
+        <svg viewBox="0 0 263.37 216.63" class="sun">
+          <use href="./assets/img/sprite.svg#sun"/>
+        </svg>
+        <!-- Table -->
+        <svg viewBox="0 0 621.64 336.75" class="table">
+          <use href="./assets/img/sprite.svg#table"/>
+        </svg>
+        <!-- Web with arrow -->
+        <!-- <svg viewBox="0 0 1727.66 763.79" class="web-arrow">
+          <use href="./assets/img/sprite.svg#web-arrow"/>
+        </svg> -->
+        <!-- Web without arrow -->
+        <svg viewBox="0 0 1727.66 763.79" class="web">
+          <use href="./assets/img/sprite.svg#web"/>
+        </svg>
+        <!-- Wifi component -->
+        <svg xmlns="http://www.w3.org/2000/svg">
+            <symbol id="wifi" viewBox="0 0 79.84 55.25">
+              <g>
+                <path d="M40.05,55.25c3.2,0,3.2-5,0-5s-3.2,5,0,5h0Z" style="fill: #231f20; stroke-width: 0px;">
+                  <animate
+                  attributeName="opacity"
+                  values="0;1;0;"
+                  dur="2s"
+                  repeatCount="indefinite"/>
+                </path>
+                <path d="M26.85,41.25c1-1.5,3.7-1.8,5.3-2.1,2.4-.4,4.8-.5,7.2-.3,4.8.3,9.5,1.9,13.6,4.4,2.8,1.7,5.3-2.6,2.5-4.3-5.1-3.1-11-4.8-16.9-5.1-2.9-.1-5.8.2-8.7.8s-5.5,1.7-7.2,4.2c-1.9,2.6,2.4,5.1,4.2,2.4h0Z" style="fill: #231f20; stroke-width: 0px;">
+                  <animate
+                  attributeName="opacity"
+                  values="0;1;0;"
+                  dur="2s"
+                  repeatCount="indefinite"/>
+                </path>
+                <path d="M16.05,30.35c5.8-4.2,12.4-7,19.4-8.2,6.6-1.1,13.9-.8,20.2,1.7,3.1,1.3,5.9,3.3,7.7,6.2,1.7,2.8,6,.2,4.3-2.5-3.9-6.5-11.3-9.5-18.6-10.5-7.9-1.1-16.1-.2-23.5,2.6-4.3,1.6-8.3,3.7-12,6.4-1.1.8-1.6,2.2-.9,3.4.6,1.1,2.3,1.7,3.4.9h0Z" style="fill: #231f20; stroke-width: 0px;">
+                  <animate
+                  attributeName="opacity"
+                  values="0;1;0;"
+                  dur="2s"
+                  repeatCount="indefinite"/>
+                </path>
+                <path d="M4.35,18.55c3.4-3.5,7.7-5.9,12.1-7.8,4.7-2.1,9.7-3.9,14.7-5,10.2-2.2,20.9.4,30.4,4.4,2.7,1.1,5.3,2.4,7.9,3.7,2.2,1.1,4.4,2.4,5.7,4.5,1.7,2.7,6,.2,4.3-2.5-2.8-4.6-8.3-6.9-13.1-9-5.3-2.4-10.8-4.5-16.6-5.7C44.05-.05,38.35-.35,32.55.45s-11.2,2.8-16.5,5C10.35,7.75,4.95,10.65.65,15.05c-2.1,2.3,1.4,5.8,3.7,3.5h0Z" style="fill: #231f20; stroke-width: 0px;">
+                  <animate
+                  attributeName="opacity"
+                  values="0;1;0;"
+                  dur="2s"
+                  repeatCount="indefinite"/>
+                </path>
+              </g>
+            </symbol>
+        </svg>
+        <!-- Wifi -->
+         <svg viewBox="0 0 79.84 55.25" class="wifi">
+          <use href="./index.html#wifi"/>
+         </svg>
+        <!-- Wifi 2 -->
+         <svg viewBox="0 0 79.84 55.25" class="wifi-2">
+          <use href="./index.html#wifi"/>
+         </svg>
+        <!-- Wifi 3 -->
+        <svg viewBox="0 0 79.84 55.25" class="wifi-3">
+          <use href="./index.html#wifi"/>
+         </svg>
+
+        <!-- TEXT -->
+         <!-- Top -->
+        <p class="text-webben open-sans">Webben og <span class="green">planeten</span> vår</p>
+        <p class="text-oppdag marydale bold">Oppdag webbens skjulte innvirkning på planeten</p>
+        <p class="text-internett open-sans"><span class="step-1 bold">Internett</span> er helt supert, men det trenger <span class="step-1 bold">strøm</span> for å fungere</p>
+        <p class="text-store marydale">Store datamaskiner kalt data- sentre bruker strøm for å holde internett i gang</p>
+        <!-- Middle -->
+        <p class="text-elektrisitet marydale">Elektrisitet kommer fra</p>
+        <p class="text-forskjellige marydale">forskjellige kilder</p>
+        <p class="text-ikke marydale">Ikke-fornybar energin</p>
+        <p class="text-fornybar marydale">Fornybar energin</p>
+        <ul class="list-ikke marydale">
+          <li>Olje</li>
+          <li>Kull</li>
+          <li>Naturgass</li>
+        </ul>
+        <ul class="list-fornybar marydale">
+          <li>Solenergi</li>
+          <li>Vindkraft</li>
+          <li>Vannkraft</li>
+          <li>Geometrisk energi</li>
+        </ul>
+        <p class="text-elektrisiteten open-sans"><span class="step-1 bold">Elektrisiteten</span> som brukes av nettet kan føre til noe som kalles <span class="step-1 bold">drivhusgasser</span></p>
+        <p class="text-drivhusgasser marydale">Drivhusgasser forurenser planeten</p>
+        <ul class="list-drivhusgasser marydale">
+        <li>karbondioksid (CO2)</li>
+        <li>metan (CH4)</li>
+        <li>lystgass (N2O)</li>
+        </ul>
+        <!-- Bottom -->
+        <p class="text-klimaendringer open-sans"><span class="block bold">Klimaendringer</span> kan føre til:</p>
+        <p class="text-vannstanden marydale"><span class="bold">Vannstanden øker</span> Issmelting kan gjøre at vannstanden øker og det kan føre til flom</p>
+        <p class="text-helsprøtt marydale"><span class="bold">Helsprøtt vær</span> Klimaendringer gjør at stormer og skog- branner skjer oftere og blir værre</p>
+        <p class="text-varmere marydale"><span class="bold">Varmere dager</span> More hot days can be yucky, and we don't want that</p>
+        <p class="text-naturproblemer marydale"><span class="bold">Naturproblemer</span> Det kan bli tøft for dyr og planter med skiftende klima</p>
+        <p class="text-mindre marydale"><span class="bold">Mindre mat og vann</span> Klimaendringer kan gjøre det vanskelig å dyrke mat og finne rent vann</p>
+        <p class="text-mennesker marydale"><span class="bold">Mennesker og helse</span> Varme dager kan gjøre folk syke, og vi trenger å holde oss friske</p>
+        <p class="text-pengeproblemer marydale"><span class="bold">Pengeproblemer</span> Klimaproblemer kan koste mye penger å fikse</p>
+        <p class="text-last marydale"><span class="block">Last ned plakat:</span> https://www.ntnu.no/web/design/digital-barekraft/illustrasjoner</p>
+        <p class="text-kontakt marydale">Kontakt: carlos.vicient@ntnu.no</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
