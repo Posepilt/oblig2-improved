@@ -123,6 +123,9 @@ p, ul, li {
   left: 68%;
   z-index: 3;
 }
+.bubble:hover {
+  animation: shake 1s infinite;
+}
 
 .caret {
   width: 3.5%;
@@ -141,6 +144,9 @@ p, ul, li {
   left: 3%;
   z-index: 3;
 }
+.cloud:hover {
+  animation: shake 1s infinite;
+}
 
 .coin {
   width: 10%;
@@ -151,6 +157,9 @@ p, ul, li {
   z-index: 3;
   animation: animationCoin 5s linear infinite;
 }
+.coin:hover {
+  animation: shake 1s infinite;
+}
 
 .earth {
   width: 23%;
@@ -160,6 +169,9 @@ p, ul, li {
   left: 44%;
   z-index: 3;
 }
+.earth:hover {
+  animation: shake 1s infinite;
+}
 
 .flame {
   width: 8%;
@@ -167,7 +179,10 @@ p, ul, li {
   position: absolute;
   top: 53%;
   left: 67.5%;
-  z-index: 3;
+  z-index: 4;
+}
+.flame:hover {
+  animation: shake 1s infinite;
 }
 
 .left-eye {
@@ -248,6 +263,9 @@ p, ul, li {
   z-index: 3;
   animation: animationParasite 8s ease-in-out infinite;
 }
+.parasite-brows:hover {
+  animation: shake 1s infinite;
+}
 
 .parasite-brows-2 {
   width: 7%;
@@ -257,6 +275,9 @@ p, ul, li {
   left: 33.5%;
   z-index: 3;
   animation: animationParasite 8.8s ease-in-out infinite;
+}
+.parasite-brows-2:hover {
+  animation: shake 1s infinite;
 }
 
 .parasite {
@@ -268,6 +289,9 @@ p, ul, li {
   z-index: 3;
   animation: animationParasite 8.2s ease-in-out infinite;
 }
+.parasite:hover {
+  animation: shake 1s infinite;
+}
 
 .parasite-2 {
   width: 4.5%;
@@ -278,6 +302,9 @@ p, ul, li {
   z-index: 3;
   animation: animationParasite 8.4s ease-in-out infinite;
 }
+.parasite-2:hover {
+  animation: shake 1s infinite;
+}
 
 .parasite-3 {
   width: 5%;
@@ -287,6 +314,9 @@ p, ul, li {
   left: 41%;
   z-index: 3;
   animation: animationParasite 8.6s ease-in-out infinite;
+}
+.parasite-3:hover {
+  animation: shake 1s infinite;
 }
 
 .qr {
@@ -308,13 +338,16 @@ p, ul, li {
   animation: animationSun 20s linear infinite;
   transform-origin: center center;
 }
+.sun:hover {
+  animation: shake 1s infinite;
+}
 
 .table {
   width: 34%;
   height: auto;
   position: absolute;
   top: 47%;
-  left: 58%;
+  left: 58.3%;
   z-index: 3;
 }
 
@@ -326,6 +359,9 @@ p, ul, li {
   left: 0;
   z-index: 3;
 }
+.web:hover {
+  animation: shake 1s infinite;
+}
 
 .wifi {
   width: 5%;
@@ -334,6 +370,9 @@ p, ul, li {
   top: 19.3%;
   left: 36.9%;
   z-index: 3;
+}
+.wifi:hover {
+  animation: shake 1s infinite;
 }
 
 .wifi-2 {
@@ -344,6 +383,9 @@ p, ul, li {
   left: 61.9%;
   z-index: 3;
 }
+.wifi-2:hover {
+  animation: shake 1s infinite;
+}
 
 .wifi-3 {
   width: 5%;
@@ -352,6 +394,9 @@ p, ul, li {
   top: 18.6%;
   left: 81.2%;
   z-index: 3;
+}
+.wifi-3:hover {
+  animation: shake 1s infinite;
 }
 
 /* TEXT */
@@ -658,18 +703,18 @@ p, ul, li {
 }
 @keyframes shake {
   0% {
-    transform: translate(0);
+    transform: translate(0, 0);
   }
   25% {
-    transform: translate(-2px, 2px);
+    transform: translate(3px, -2px);
   }
   50% {
-    transform: translate(2px, -2px);
+    transform: translate(-4px, 3px);
   }
   75% {
-    transform: translate(-2px, 2px);
+    transform: translate(2px, 4px);
   }
   100% {
-    transform: translate(0);
+    transform: translate(-3px, -1px);
   }
 }/*# sourceMappingURL=style.css.map */
