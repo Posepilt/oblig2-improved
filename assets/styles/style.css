@@ -109,7 +109,10 @@ p, ul, li {
   position: absolute;
   top: 25%;
   left: 26%;
-  z-index: 3;
+  z-index: 4;
+}
+.arrow:hover {
+  animation: shake 1s infinite;
 }
 
 .bubble {
@@ -191,7 +194,10 @@ p, ul, li {
   position: absolute;
   top: 40%;
   left: 74%;
-  z-index: 3;
+  z-index: 4;
+}
+.lightning-up:hover {
+  animation: shake 1s infinite;
 }
 
 .lightning-left {
@@ -201,6 +207,9 @@ p, ul, li {
   top: 49%;
   left: 45%;
   z-index: 3;
+}
+.lightning-left:hover {
+  animation: shake 1s infinite;
 }
 
 .line {
@@ -572,6 +581,9 @@ p, ul, li {
   font-size: var(--step--2);
   line-height: 1.35;
 }
+.text-last a {
+  color: white;
+}
 
 .text-kontakt {
   text-align: end;
@@ -601,7 +613,7 @@ p, ul, li {
   color: #0FA15C;
 }
 
-/* ANIMATIONS */
+/* ANIMATIONS / KEYFRAMES */
 @keyframes animationSun {
   0% {
     transform: rotate(10deg);
@@ -642,5 +654,22 @@ p, ul, li {
   100% {
     transform: scale(0.75);
     opacity: 0.5;
+  }
+}
+@keyframes shake {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(-2px, 2px);
+  }
+  50% {
+    transform: translate(2px, -2px);
+  }
+  75% {
+    transform: translate(-2px, 2px);
+  }
+  100% {
+    transform: translate(0);
   }
 }/*# sourceMappingURL=style.css.map */
