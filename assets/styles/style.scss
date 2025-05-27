@@ -39,7 +39,7 @@ p, ul, li {
 #poster-container {
     position: relative; //sets reference point for the absolutely positioned children.
     background-color: white; //in case user has dark theme, for opacity on components.
-    container-type: inline-size;
+    container-type: inline-size; //so variable sizes follow #poster-container's width, not the full screen
 }
 .poster-content {
     width: 100%;
